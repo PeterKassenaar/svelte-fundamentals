@@ -1,8 +1,17 @@
 <script lang="ts">
-    // Example of a <select>/dropdown component
+    // Option 1: Example of a <select>/dropdown component
     let selectedCountry = 'NL';
 
-    const countries = [
+
+    // Option 2: using a complete object as binding
+    interface Country {
+        code: string;
+        name: string;
+    }
+    let selectedCountryObject: Country;
+
+    // Our array with country data which is bound to the dropdown.
+    const countries: Country[] = [
         { code: 'NL', name: 'Netherlands' },
         { code: 'DE', name: 'Germany' },
         { code: 'FR', name: 'France' },
@@ -23,4 +32,16 @@
         </option>
     {/each}
 </select>
+<hr>
+
+<!--<p>Also possible: using a complete object as binding:</p>-->
+<!--<p>Selected country: {selectedCountryObject?.name}</p>-->
+
+<!--<select bind:value={selectedCountryObject}>-->
+<!--    {#each countries as country}-->
+<!--        <option value={country}>-->
+<!--            {country.name}-->
+<!--        </option>-->
+<!--    {/each}-->
+<!--</select>-->
 
