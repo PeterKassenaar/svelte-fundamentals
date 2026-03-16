@@ -1,13 +1,14 @@
 <script lang="ts">
+    // import state and functionality from counterstate.svelte store
     import {counterState, increment, decrement, reset} from './store/counterstate.svelte';
 </script>
 
 <h3>Counter Controls</h3>
 
-<button class="btn btn-decrement" onclick={increment}>+</button>
-<button class="btn btn-increment" onclick={decrement}>-</button>
-<button class="btn btn-reset" onclick={reset}>Reset</button>
-
+<button class="btn btn-decrement"
+        onclick={increment}>Increment</button>
+<button class="btn btn-increment"
+        onclick={decrement}>Decrement</button>
 <p>Count in controls: {counterState.count}</p>
 
 <!--Some simple CSS for this component-->

@@ -1,12 +1,12 @@
 <script lang="ts">
-
+    // import the components that use the state
     import CounterDisplay from "./lib/CounterDisplay.svelte";
     import CounterControls from "./lib/CounterControls.svelte";
 </script>
 
 <!--HTML template-->
 <div>
-    <h1>Svelte app</h1>
+    <h2>Shared state with Svelte 5 runes</h2>
     <CounterDisplay/>
     <hr>
     <CounterControls/>

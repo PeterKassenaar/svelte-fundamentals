@@ -1,3 +1,4 @@
+<!--CounterDisplay.svelte - just showing the current state of the counter-->
 <script lang="ts">
     import {counterState} from "./store/counterstate.svelte";
 </script>
