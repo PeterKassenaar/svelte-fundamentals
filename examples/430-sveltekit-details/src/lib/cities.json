@@ -1,0 +1,9 @@
+[
+	{ "id": 1, "name": "Berlin", "country": "Germany" },
+	{ "id": 2, "name": "London", "country": "United Kingdom" },
+	{ "id": 3, "name": "Paris", "country": "France" },
+	{ "id": 4, "name": "Madrid", "country": "Spain" },
+	{ "id": 5, "name": "Rome", "country": "Italy" },
+	{ "id": 6, "name": "Amsterdam", "country": "Netherlands" },
+	{ "id": 7, "name": "Vienna", "country": "Austria" }
+]
