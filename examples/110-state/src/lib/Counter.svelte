@@ -1,9 +1,11 @@
 <script lang="ts">
-    let count: number = $state(0) // the state is intialize with a number
-    let name: string = $state('Peter') // the state is intialize with a string
+    let count: number = $state(0) // the state is intialized with a number
+    let name: string = $state('Peter') // the state is intialized with a string
+
+    // function
     const increment = () => {
         // update the state. Here, 'count' is just a variable
-        // that you can update directly (unlike other frameworks)
+        // that you can update directly (unlike other frameworks, where 'count' is an object)
         count += 1
     }
 </script>

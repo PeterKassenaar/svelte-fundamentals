@@ -11,6 +11,8 @@
     <Header name={name} age={age}/>
     <!-- Shorthand notation,
         when key and value are the same-->
+    <hr>
+    Same component, in the source code this time with shorthand notation:
     <Header {name} {age}/>
 </div>
 
