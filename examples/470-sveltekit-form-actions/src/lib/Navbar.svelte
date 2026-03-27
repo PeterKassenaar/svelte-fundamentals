@@ -31,7 +31,7 @@
 			<ul class="navbar-nav">
 				{#each routes as route}
 					<li class="nav-item">
-						<a class="nav-link" class:active={$page.url.pathname === route.path} href={route.path}>{route.label}</a> |
+						<a class="nav-link" class:active={$page.url.pathname === route.path} href={route.path}>{route.label}</a>
 					</li>
 				{/each}
 			</ul>
