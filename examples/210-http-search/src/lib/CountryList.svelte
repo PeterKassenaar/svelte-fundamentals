@@ -1,7 +1,6 @@
 <!--CountryList.svelte - displaying a list of countries-->
 <script lang="ts">
     import type {Country} from './types/Country';
-    import * as sea from "node:sea";
 
     // 0. local state, prepared for reactive updates
     let countries: Country[] = $state([]);
@@ -11,7 +10,8 @@
     let hasSearched: boolean = $state(false); // to prevent error msg from showing up when the user has not searched yet
 
     // 1. these variable don't change, so we don't need to use $state();
-    const url = `https://restcountries.com/v3.1/name/{name}?fields=name,capital,flags`;
+    const url = 'https://restcountries.com/v3.1/name/';
+    const fields = '?fields=name,capital,flags'
     const errorMsg = 'Please enter at least 3 characters to search.';
 
     // 2. helper function to clear the results and reset the state
@@ -42,9 +42,8 @@
             // Simulated delay of 1500ms to show loading state
             await new Promise(resolve => setTimeout(resolve, 1500));
 
-            // using .replace() here to replace the placeholder {name} with the actual search term;
-            // of course this can also be done in the API endpoint itself or using string literals.
-            const response = await fetch(url.replace('{name}', encodeURIComponent(searchTerm)));
+            // composing the correct url
+            const response = await fetch(`${url}${searchTerm}${fields}`);
             if (response.status === 404) {
                 // If no countries are found, the API returns a 404.
                 countries = [];
