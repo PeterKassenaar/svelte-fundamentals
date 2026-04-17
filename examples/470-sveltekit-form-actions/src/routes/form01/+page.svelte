@@ -20,5 +20,8 @@
 <!--the 'form' object will be available in the component's props and-->
 <!--we can inspect it-->
 {#if form?.success}
-	<div class="alert alert-success mt-3" role="alert">Form submitted successfully!</div>
+	<div class="alert alert-success mt-3" role="alert">
+		Form submitted successfully!
+		We received: <strong>{form.name}</strong>
+	</div>
 {/if}

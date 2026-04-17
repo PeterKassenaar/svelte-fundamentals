@@ -12,7 +12,8 @@ export const actions = {
 
 		// Our return object has a success property that we can test in the page
 		return {
-			success: true
+			success: true,
+			name : name
 		};
 	}
 };
