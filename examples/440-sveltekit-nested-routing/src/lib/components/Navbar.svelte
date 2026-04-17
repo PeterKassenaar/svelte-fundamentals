@@ -4,7 +4,7 @@
 <!--src/lib/Navbar.svelte-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="/">SvelteKit Demo</a>
+		<a class="navbar-brand" href="/examples/440-sveltekit-nested-routing/static">SvelteKit Demo</a>
 		<button
 			class="navbar-toggler"
 			type="button"
@@ -19,7 +19,7 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="/">Home</a>
+					<a class="nav-link" href="/examples/440-sveltekit-nested-routing/static">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/customers">Customers</a>

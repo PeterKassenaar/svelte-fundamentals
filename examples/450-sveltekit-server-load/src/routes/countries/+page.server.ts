@@ -12,7 +12,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
 	// 2. Sort the countries alphabetically by name (of course this is optional)
 	countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
 
-	// 3. Pass to the page component
+	// 3. Pass to the page component. It is available as data via $props() in the +page.svelte component
 	return {
 		countries
 	};
