@@ -1,5 +1,5 @@
 <script lang="ts">
-	import customers from '$lib/customers.json';
+	import customers from '$lib/data/customers.json';
 
 	interface Customer {
 		id: number;

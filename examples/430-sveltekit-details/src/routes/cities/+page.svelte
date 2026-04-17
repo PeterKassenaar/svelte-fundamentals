@@ -1,6 +1,6 @@
 <!--cities/+page.svelte-->
 <script lang="ts">
-	import cities from '$lib/cities.json';
+	import cities from '$lib/data/cities.json';
 
 	interface City {
 		id: number;

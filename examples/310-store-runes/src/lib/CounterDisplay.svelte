@@ -4,5 +4,5 @@
 </script>
 
 <h3>Counter Display</h3>
-<!--Note: no $ prefix needed-->
+<!--Note: no $ prefix needed, as opposd to classic Svelte stores -->
 <p>Current count: {counterState.count}</p>

@@ -5,7 +5,7 @@
 
 	// Custom imports
 	import favicon from '$lib/assets/favicon.svg';
-	import Navbar from '$lib/Navbar.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 	// using global css
 	import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -1,5 +1,5 @@
 <script>
-	import CustomerList from '$lib/CustomerList.svelte';
+	import CustomerList from '$lib/components/CustomerList.svelte';
 </script>
 
 <div class="container">

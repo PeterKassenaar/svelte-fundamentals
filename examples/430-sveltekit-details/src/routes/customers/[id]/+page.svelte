@@ -1,6 +1,6 @@
 <script lang="ts">
 	// 1. Import the customer data from the local JSON file
-	import customers from '$lib/customers.json';
+	import customers from '$lib/data/customers.json';
 
 	// 2. Import the page store from SvelteKit to access route parameters
 	import { page } from '$app/state';

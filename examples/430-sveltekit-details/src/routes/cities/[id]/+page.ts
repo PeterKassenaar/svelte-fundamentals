@@ -1,5 +1,5 @@
 // +page.ts for the cities/[id] route
-import cities from '$lib/cities.json';
+import cities from '$lib/data/cities.json';
 import type { PageLoad } from './$types';
 
 // Export the load function that runs on the server and/or client to fetch data before rendering the page
