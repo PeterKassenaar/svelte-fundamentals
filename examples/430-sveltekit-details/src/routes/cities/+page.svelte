@@ -2,12 +2,6 @@
 <script lang="ts">
 	import cities from '$lib/data/cities.json';
 
-	interface City {
-		id: number;
-		name: string;
-		country: string;
-	}
-
 </script>
 
 <div>
