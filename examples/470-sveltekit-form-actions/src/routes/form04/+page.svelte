@@ -3,7 +3,10 @@
 </script>
 
 <h2>Country Search - Calling an API</h2>
-
+<div>This page has one form, it submits the form to the server and the server calls an API to get the country data.
+	In this case, only the first country is returned from the API. See <code>+page.server.ts</code> for more details.
+</div>
+<hr>
 <form method="POST">
 	<div class="form-group">
 		<label for="country">Country</label>
