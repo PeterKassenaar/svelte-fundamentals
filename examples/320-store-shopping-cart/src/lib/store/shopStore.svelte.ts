@@ -12,11 +12,11 @@ type ShopState = {
 // 1. The state itself
 export const shopState: ShopState = $state({
     articles: [
-        { id: 1, name: 'Hammer', price: 12.95 },
-        { id: 2, name: 'Saw', price: 18.5 },
-        { id: 3, name: 'Drill', price: 79.0 },
-        { id: 4, name: 'Screwdriver Set', price: 24.99 },
-        { id: 5, name: 'Tape Measure', price: 9.75 }
+        {id: 1, name: 'Hammer', price: 12.95},
+        {id: 2, name: 'Saw', price: 18.5},
+        {id: 3, name: 'Drill', price: 79.0},
+        {id: 4, name: 'Screwdriver Set', price: 24.99},
+        {id: 5, name: 'Tape Measure', price: 9.75}
     ],
     cart: []
 });
@@ -32,7 +32,7 @@ const cartSummary = $derived.by(() => {
         totalPrice += item.price * item.quantity;
     }
 
-    return { totalItems, totalPrice };
+    return {totalItems, totalPrice};
 });
 
 // In Svelte, it is forbidden to export a derived state directly, so we export a function that returns it.
@@ -42,7 +42,7 @@ export const getCartSummary = () => cartSummary;
 // Store functionality
 // *******************
 // 1. function for adding an article to the cart
-export const addToCart =(article: Article)  =>{
+export const addToCart = (article: Article) => {
     // 1a. Check if the article is already in the cart
     const existing = shopState.cart.find((item) => item.id === article.id);
 
@@ -59,18 +59,18 @@ export const addToCart =(article: Article)  =>{
 }
 
 // 2. Function for resetting/clearing the cart
-export const clearCart=()=> {
+export const clearCart = () => {
     shopState.cart = [];
 }
 
 // 3. Function for placing an order
-export const orderCart = ()=> {
+export const orderCart = () => {
     if (shopState.cart.length === 0) {
         alert('Your shopping cart is empty.');
         return;
     }
 
-    const { totalItems, totalPrice } = getCartSummary();
+    const {totalItems, totalPrice} = getCartSummary();
 
     // 3a. Display the order confirmation to the user
     alert(
